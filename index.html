@@ -13,7 +13,25 @@
             background-color: orange;
         }
         
+        section {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(90deg, black, red, black);
+            animation: a 10s linear infinite;
+            z-index: -1;
+    }
     
+    @keyframes a {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
         h4{
             font: italic small-caps bolder 28px arial, sans-serif;
         }
@@ -129,7 +147,7 @@
 }
     </style>
     <body>
-        <section><\section>
+        <section></section>
         <div id ="heading">
         <a href ="#" class="logo">
             <img src="bat_logo.png" alt="Batman">    
