@@ -9,20 +9,11 @@
             margin: auto;
             font-family : Roboto;
             font-size: 16px;
-            color: white;
-            background-color: orange;
-        }
-        
-        #a {
-            width: 100%;
-            height: 2800px;
-            position: absolute;
-            top: -10px;
-            left: 0;
             background: linear-gradient( 90deg,black, red, black);
             animation: a 0s linear infinite;
-            z-index: -1;
-    }
+            color: white;
+        }
+        
     
     @keyframes a {
         0% {
@@ -136,8 +127,29 @@
             text-align: center;
             color: #666;
             margin: 35px;
+            z-index:1;
+            box-shadow: 10px 10px rgba(70, 70, 70, 0.4);
+            transition: 1s;
+            cursor: pointer;
         }
-
+        .thumbnail:hover{
+            Transform: translateY(-30px);
+            box-shadow: 20px 20px rgba(70, 70, 70, 0.2);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            margin:10px;
+            transition: 1s;
+            font-family: arial;
+            padding: 5px;
+        }
+        a:hover{
+            border-radius: 5px;
+            color:rgb(0, 0, 0);
+            font-size: 20px;
+        }
         #link{
             text-decoration: none;
             padding: 15px;
@@ -146,6 +158,9 @@
             width: 100%;
             color: black;
 }
+        .form .text{
+            padding
+        }
     </style>
     <body>
         <div id = "a"></div>
@@ -300,10 +315,9 @@ marksman, advanced stamina and endurance </td>
          <div id="Form">
              <center><br><br><br><br><br><br><br><br>
         <h1 style="padding:20px; margin: 20px; "> Feedback Form </h1>
-      
-        <form> 
-            <input type="text" placeholder="Enter First Name" name="First Name"> <br><br><!-- comment -->
-            <input type="text" placeholder="Enter Last Name"  name="Last Name"> <br><br><!-- comment -->
+        <form class="form"> 
+            <input type="text" placeholder="Enter First Name" name="First Name" class="text"> <br><br><!-- comment -->
+            <input type="text" placeholder="Enter Last Name"  name="Last Name" class="text"> <br><br><!-- comment -->
             
             <input type="radio" name="feedback" value="Good"> Good
               <input type="radio" name="feedback" value="Average"> Average
